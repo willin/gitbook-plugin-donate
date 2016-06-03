@@ -1,23 +1,53 @@
 {
-  "name": "gitbook-plugin-donate",
-  "version": "0.1.0",
-  "description": "Gitbook 捐赠打赏按钮插件",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/willin/gitbook-plugin-donate.git"
-  },
-  "keywords": [
-    "gitbook",
-    "plugin",
-    "donate",
-    "alipay",
-    "wechat"
-  ],
-  "author": "Willin Wang",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/willin/gitbook-plugin-donate/issues"
-  },
-  "homepage": "https://github.com/willin/gitbook-plugin-donate#readme"
+	"name": "gitbook-plugin-donate",
+	"version": "0.1.1",
+	"description": "Gitbook 捐赠打赏按钮插件",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/willin/gitbook-plugin-donate.git"
+	},
+	"keywords": ["gitbook", "plugin", "donate", "alipay", "wechat"],
+	"author": "Willin Wang",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/willin/gitbook-plugin-donate/issues"
+	},
+	"homepage": "https://github.com/willin/gitbook-plugin-donate#readme",
+	"gitbook": {
+		"properties": {
+			"title": {
+				"type": "string",
+				"title": "Text above donate button",
+				"required": false,
+      	"default": ""
+			},
+      "button": {
+				"type": "string",
+				"title": "Button Text",
+				"required": true,
+      	"default": "Donate"
+			},
+			"wechat": {
+				"type": "string",
+				"title": "Wechat QR URL",
+				"default": ""
+			},
+      "alipay": {
+				"type": "string",
+				"title": "Alipay QR URL",
+				"default": ""
+			},
+      "wechatText": {
+				"type": "string",
+				"title": "Wechat QR text",
+				"default": "微信打赏"
+			},
+      "alipayText": {
+				"type": "string",
+				"title": "Alipay QR Text",
+				"default": "支付宝打赏"
+			}
+		}
+	}
 }
