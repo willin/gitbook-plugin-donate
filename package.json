@@ -1,6 +1,6 @@
 {
 	"name": "gitbook-plugin-donate",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"description": "Gitbook 捐赠打赏按钮插件",
 	"main": "index.js",
 	"repository": {
@@ -14,6 +14,9 @@
 		"url": "https://github.com/willin/gitbook-plugin-donate/issues"
 	},
 	"homepage": "https://github.com/willin/gitbook-plugin-donate#readme",
+	"engines": {
+    "gitbook": "*"
+  },
 	"gitbook": {
 		"properties": {
 			"title": {
