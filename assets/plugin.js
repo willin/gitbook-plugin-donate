@@ -19,7 +19,9 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
 			if (wechatURL !== '') {
 				html = html.concat([
           '<div id="wechat" style="display: inline-block">',
+					'<a href="' + wechatURL + '" class="fancybox" rel="group">',
           '<img id="wechat_qr" src="' + wechatURL + '" alt="WeChat Pay"/>',
+					'</a>',
           '<p>' + wechatText + '</p>',
           '</div>'
         ]);
@@ -27,7 +29,9 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
 			if (alipayURL !== '') {
 				html = html.concat([
           '<div id="alipay" style="display: inline-block">',
+					'<a href="' + alipayUR L+ '" class="fancybox" rel="group">',
           '<img id="alipay_qr" src="' + alipayURL + '" alt="Alipay"/>',
+					'</a>',
           '<p>' + alipayText + '</p>', '</div>'
         ]);
 			}
