@@ -29,7 +29,7 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
 			if (alipayURL !== '') {
 				html = html.concat([
           '<div id="alipay" style="display: inline-block">',
-					'<a href="' + alipayUR L+ '" class="fancybox" rel="group">',
+					'<a href="' + alipayURL+ '" class="fancybox" rel="group">',
           '<img id="alipay_qr" src="' + alipayURL + '" alt="Alipay"/>',
 					'</a>',
           '<p>' + alipayText + '</p>', '</div>'

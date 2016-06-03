@@ -1,6 +1,6 @@
 {
 	"name": "gitbook-plugin-donate",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Gitbook 捐赠打赏按钮插件",
 	"main": "index.js",
 	"repository": {
