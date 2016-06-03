@@ -1,6 +1,7 @@
 .gitbook-donate {
   padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;
 }
+
 #rewardButton {
   cursor: pointer;
   border: 0;
@@ -17,6 +18,7 @@
   display: inline-block;
   width: 80px;
   height: 35px;
+  line-height: 35px;
   border-radius: 5px;
   color: #fff;
   font-weight: 400;

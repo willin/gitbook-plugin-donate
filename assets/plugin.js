@@ -1,4 +1,4 @@
-require(['gitbook'], function(gitbook) {
+require(['gitbook', 'jQuery'], function(gitbook, $) {
 	var wechatURL;
 	var alipayURL;
 	var titleText;
@@ -7,7 +7,7 @@ require(['gitbook'], function(gitbook) {
 	var alipayText;
 
 	function insertDonateLink() {
-		if (jQuery('.gitbook-donate').length === 0 && (wechatURL !== '' || alipayURL !== '')) {
+    if ($('.gitbook-donate').length === 0 && wechatURL !== undefined && (wechatURL !== '' || alipayURL !== '')) {
 			var html = [
         '<div class="gitbook-donate">',
         '<div>' + titleText + '</div>',
@@ -32,13 +32,12 @@ require(['gitbook'], function(gitbook) {
         ]);
 			}
 			html = html.concat(['</div>', '</div>']);
-			jQuery('.page-inner section.normal:last').after();
+			$('.page-inner section.normal:last').after(html.join(''));
 		}
 	}
 
 	gitbook.events.bind('start', function(e, config) {
-		// githubURL = config.github.url;
-		wechatURL = config.donate.wechat || '';
+    wechatURL = config.donate.wechat || '';
 		wechatText = config.donate.wechatText || '微信捐赠';
 		alipayURL = config.donate.alipay || '';
 		alipayText = config.donate.alipayText || '支付宝捐赠';
