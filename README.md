@@ -20,6 +20,8 @@ Config:
 }
 ```
 
+演示：<http://money.js.cool/>
+
 如果喜欢，请打赏
 
 ## LICENSE
